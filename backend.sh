@@ -17,5 +17,5 @@ systemctl daemon-reload
 systemctl enable backend
 systemctl start backend
 
-dnf install myssql -y
+dnf install mysql -y
 mysql -h 172.31.1.85 -uroot -pExpenseApp@1 < /app/schema/backend.sql
